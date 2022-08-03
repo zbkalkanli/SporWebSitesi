@@ -8,11 +8,12 @@ namespace SporSitesi.Models
 {
     public class Adres
     {
+        public int Id { get; set; }
         public string AdresTarifi { get; set; }
         public string Il { get; set; }
         public string Ilce { get; set; }
         public string PostaKodu { get; set; }
-        public int UyeId{ get; set; }
         [ForeignKey("UyeId")]
+        public int UyeId{ get; set; }
     }
 }
